@@ -1,0 +1,27 @@
+{
+  "name": "rollup-vue-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "bundle": "rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sincere1809/learning-notes.git"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "rollup"
+  ],
+  "author": "sincere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sincere1809/learning-notes/issues"
+  },
+  "homepage": "https://github.com/sincere1809/learning-notes#readme",
+  "devDependencies": {
+    "rollup": "^0.42.0"
+  }
+}
