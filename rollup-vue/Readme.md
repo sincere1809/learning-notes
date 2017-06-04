@@ -1,3 +1,3 @@
 # Learning Vuejs and Rollup
 
-* [ntroduce of rollupjs](./notes/rollup_intro.md)
+* [Introduction of rollup](./notes/rollup_intro.md)
