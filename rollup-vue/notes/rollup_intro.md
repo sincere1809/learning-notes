@@ -10,7 +10,7 @@
 
 * Run below commands to create a new project and install rollupjs
 
-```shell
+```Bash
 mkdir rollup-vue
 cd rollup-vue
 npm init
@@ -19,7 +19,7 @@ npm -D i rollup
 
 * As I do not have the rollup installed globally, i need to enter the command below to get the `help`
 
-```shell
+```Bash
 ./node_modules/.bin/rollup -h
 ```
 
@@ -27,7 +27,7 @@ npm -D i rollup
 
 * Create 2 js files
 
-```shell
+```Bash
 cd src/
 mkdir js && cd js/
 touch main.js utils.js
@@ -35,7 +35,7 @@ touch main.js utils.js
 
 * Copy below code into the new created js files
 
-```js
+```JavaScript
 // src/js/main.js
 
 'use strict';
@@ -46,7 +46,7 @@ const num1 = 1000, num2 = 200;
 console.log(`the add result is: ${add(num1, num2)}`);
 ```
 
-```js
+```JavaScript
 // src/js/utils.js
 
 'use strict';
@@ -80,13 +80,13 @@ export {
 
 * Run the bundle command:
 
-```shell
+```Bash
 ./node_modules/.bin/rollup src/js/main.js -o dist/js/bundle.js -f es
 ```
 
 Now you can get the output file in the /dist folder, and you may find that there is only a `add` function was bundled into the output file, the others were ignored.
 
-```js
+```JavaScript
 // dist/js/bundle.js
 
 const add = (num1, num2) => {
@@ -104,7 +104,7 @@ console.log(`the add result is: ${add(num1, num2)}`);
 
 * Create a file in the project root called `rollup.config.js`
 
-```js
+```JavaScript
 // rollup.config.js
 
 export default {
@@ -116,7 +116,7 @@ export default {
 
 * Run the cli command
 
-```shell
+```Bash
 ./node_modules/.bin/rollup -c
 or
 ./node_modules/.bin/rollup -c rollup.config.js
@@ -126,7 +126,7 @@ or
 
 * Update your package.json
 
-```json
+```JSON
 "scripts": {
   "bundle": "rollup -c rollup.config.js"
 }
@@ -134,6 +134,6 @@ or
 
 * Run the npm script
 
-```shell
+```Bash
 npm run-script bundle
 ```
