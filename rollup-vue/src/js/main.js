@@ -1,6 +1,8 @@
-'use strict';
+'use strict'
 
-import { add } from './utils.js';
+import Vue from 'vue'
 
-const num1 = 1000, num2 = 200;
-console.log(`the add result is: ${add(num1, num2)}`);
+new Vue({
+  el: '#app',
+  render: createElement => createElement('div', 'Static content set in the Vue instace')
+})
