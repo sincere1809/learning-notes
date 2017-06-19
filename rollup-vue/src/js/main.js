@@ -1,8 +1,12 @@
 'use strict'
 
 import Vue from 'vue'
+import App from './app.vue'
 
 new Vue({
   el: '#app',
-  render: createElement => createElement('div', 'Static content set in the Vue instace')
+  components: {
+    App
+  },
+  render: createElement => createElement('app')
 })

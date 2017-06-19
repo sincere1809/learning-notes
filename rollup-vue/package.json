@@ -16,6 +16,7 @@
   "keywords": [
     "vue",
     "vue2",
+    "vue-blu",
     "rollup"
   ],
   "author": "sincere",
@@ -28,11 +29,14 @@
     "rimraf": "^2.6.1",
     "rollup": "^0.42.0",
     "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-rebase": "^0.6.1",
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-serve": "^0.3.0",
+    "rollup-plugin-vue": "^2.4.0",
     "rollup-watch": "^3.2.2"
   },
   "dependencies": {
-    "vue": "^2.3.3"
+    "vue": "^2.3.4",
+    "vue-blu": "^0.1.9"
   }
 }
